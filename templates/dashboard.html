@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0;
+             background: linear-gradient(135deg, #f3f2ef, #ece8e0); display:flex; justify-content:center; align-items:center; height:100vh;">
+
+<div style="width: 100%; max-width: 500px; background-color: #ffffff; padding: 40px; border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2); border: 2px solid #d0cfc5;">
+
+    <h1 style="text-align: center; color: #2e7d32; margin-bottom: 30px; font-size: 28px;">
+        <i class="fa fa-tachometer-alt" style="color: #bfa14b;"></i> Dashboard - Sensi
+    </h1>
+
+    <p style="font-size: 16px; margin-bottom: 10px;">
+        <i class="fa fa-user" style="color: #2e7d32; margin-right: 10px;"></i>
+        <strong>Name:</strong> {{ user.first_name }} {{ user.last_name }}
+    </p>
+
+    <p style="font-size: 16px; margin-bottom: 10px;">
+        <i class="fa fa-envelope" style="color: #2e7d32; margin-right: 10px;"></i>
+        <strong>Email:</strong> {{ user.email if user.email else session['email'] }}
+    </p>
+
+    <p style="font-size: 16px; margin-bottom: 20px;">
+        <i class="fa fa-phone" style="color: #2e7d32; margin-right: 10px;"></i>
+        <strong>Phone:</strong> {{ user.phonenumber }}
+    </p>
+
+    <a href="{{ url_for('logout') }}" style="display:block; text-align:center; background: linear-gradient(90deg, #bfa14b, #d6c28d);
+       color: white; font-weight: bold; padding: 12px; border: 2px solid #3a5a40; border-radius: 8px; text-decoration:none;
+       cursor: pointer; font-size: 16px; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+       <i class="fa fa-sign-out-alt"></i> Logout
+    </a>
+
+</div>
+</body>
+</html>

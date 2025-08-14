@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged Out - Sensi</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body style="font-family: Arial, sans-serif; margin:0; padding:0;
+             background: linear-gradient(135deg, #f3f2ef, #ece8e0);
+             display:flex; justify-content:center; align-items:center; height:100vh;
+             border: 10px solid #d0cfc5; box-sizing: border-box;">
+
+<div style="width: 100%; max-width: 400px; background-color: #ffffff; padding: 40px; border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2); border: 2px solid #d0cfc5; text-align: center;">
+
+    <h2 style="color: #2e7d32; margin-bottom: 30px; font-size: 24px;">
+        <i class="fa fa-sign-out-alt" style="color: #bfa14b;"></i> You have been logged out
+    </h2>
+
+    <p style="margin-bottom: 30px; font-size: 16px; color: #3a5a40;">
+        Thank you for visiting Sensi. Come back soon!
+    </p>
+
+    <a href="{{ url_for('login_page') }}"
+       style="display: inline-block; background: linear-gradient(90deg, #bfa14b, #d6c28d);
+              color: white; font-weight: bold; padding: 12px 20px; border: 2px solid #d0cfc5;
+              border-radius: 8px; text-decoration: none; cursor: pointer; font-size: 16px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.3s;">
+        <i class="fa fa-arrow-right-to-bracket"></i> Login again
+    </a>
+
+</div>
+</body>
+</html>
