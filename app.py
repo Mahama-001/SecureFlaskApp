@@ -13,7 +13,8 @@ from flask_talisman import Talisman
 csrf = CSRFProtect(app)
 import bleach
 
-email=bleach.clean(request.form['email'])
+firstname=bleach.clean(request.form['first_name'])
+lastname=bleach.clean(request.form['last_name'])
 password=bleach.clean(request.form['password'])
 
 # ---------------------------------------------------------------------------
