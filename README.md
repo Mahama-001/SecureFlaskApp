@@ -1,6 +1,6 @@
 # SecureFlaskApp 🔐
 
- **containerized Flask web application** designed with **multiple security mechanisms** to meet the requirements of our cybersecurity project.  
+A **containerized Flask web application** designed with **multiple security mechanisms** to meet the requirements of our cybersecurity project.  
 Built to run in **Docker** with best practices for security, authentication, and safe deployment.
 
 ---
