@@ -10,7 +10,6 @@ from flask_wtf.csrf import CSRFProtect, generate_csrf
 from sqlalchemy.exc import IntegrityError
 from flask_cors import CORS
 from flask_talisman import Talisman
-csrf = CSRFProtect(app)
 import bleach
 
 firstname=bleach.clean(request.form['first_name'])
